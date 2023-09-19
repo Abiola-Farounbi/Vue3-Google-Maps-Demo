@@ -1,20 +1,15 @@
 <template>
-  <GMapMap
-   :center="center"
-   :zoom="7"
-   map-type-id="terrain"
-   style="width: 1000px; height: 800px"
-  >
-  </GMapMap>
+  <h1> Vue 3 Google Maps </h1>
+<!-- Rendering the map component -->
+  <Map></Map>
  </template>
  
  <script>
+ import Map from './components/map.vue'
   export default {
    name: "App",
-   data() {
-    return {
-     center: { lat: 51.093048, lng: 6.84212 },
-    };
-   },
+   components: {
+     Map
+   }
   };
  </script>
