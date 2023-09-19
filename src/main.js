@@ -10,6 +10,7 @@ const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
 app.use(VueGoogleMaps, {
   load: {
     key: GOOGLE_MAPS_API_KEY,
+    libraries: "places"
   },
  })
  .mount("#app");
