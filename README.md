@@ -33,4 +33,4 @@ npm run lint
 ```
 
 ## Demo on the project
-![Alt Text](src\components\Demo.gif)
+![Alt Text](src\media\Demo.gif)
