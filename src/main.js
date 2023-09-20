@@ -2,7 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
- //Imports the map package
+//Imports the map package
 import VueGoogleMaps from "@fawmi/vue-google-maps";
 
 const app = createApp(App);
@@ -12,7 +12,7 @@ app.use(VueGoogleMaps, {
     key: GOOGLE_MAPS_API_KEY,
     libraries: "places"
   },
- })
- .mount("#app");
+})
+  .mount("#app");
 
 
