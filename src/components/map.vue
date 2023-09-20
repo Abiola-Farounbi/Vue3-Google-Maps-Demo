@@ -5,7 +5,7 @@
       <GMapAutocomplete
         placeholder="Search for a location"
         @place_changed="setPlace"
-        style="font-size: large"
+        style="font-size: medium"
       >
       </GMapAutocomplete>
     </div>
@@ -47,7 +47,7 @@
           </GMapInfoWindow>
           
       </GMapMarker>
-      
+
     </GMapMap>
   </div>
 </template>
@@ -74,10 +74,12 @@ export default {
       url: ''
     })
 
-    // Get users current location
+    // Get users current location using the browser's geolocation API
     const getUserLocation = () => {
+      // Check if Geolocation is supported by the browser
       const isSupported = 'navigator' in window && 'geolocation' in navigator
       if (isSupported) {
+        // Retrieve the user's current position
         navigator.geolocation.getCurrentPosition((position) => {
           coords.value.lat = position.coords.latitude
           coords.value.lng = position.coords.longitude
