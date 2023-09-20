@@ -33,4 +33,4 @@ npm run lint
 ```
 
 ## Demo on the project
-![Alt Text](src\media\Demo.gif)
+![Alt Text](https://github.com/Abiola-Farounbi/Vue3-Google-Maps-Demo/blob/master/src/media/Demo.gif)
